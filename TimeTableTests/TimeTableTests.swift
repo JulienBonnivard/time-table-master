@@ -33,7 +33,18 @@ class TimeTableTests: XCTestCase {
             }
         }
     }
-    
+    func testExample2() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let timeTable = TimeTable()
+        
+        for i in 0 ..< 10 {
+            for j in 0 ..< 10 {
+                let c = timeTable.multiply(i, b: j)
+                XCTAssert(c == i * j)
+            }
+        }
+    }
     func testPerformanceExample() {
         // This is an example of a performance test case.
         let timeTable = TimeTable()
